@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="assets/revou.png" alt="Logo"></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#aboutus">About Us</a></li>
+                    <li><a href="#headquarter">Our Headquarter</a></li>
+                    <li><a href="#message">Message Us</a></li>
+                </ul>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Page Section -->
+    <section class="header" id="header">
+        <div class="header-content">
+            <h1>Hello <span id="userName">User</span>, Welcome To Our Company Website</h1>
+        </div>
+        <img class="header-bg" src="assets/header.jpg" alt="Background Image">
+    </section>
+
+    <section class="about-us" id="aboutus">
+        <div class="container">
+            <div class="about-image">
+                <img src="assets/aboutus.jpg" alt="Profile Image">
+            </div>
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>Our company specializes in technologies, and over the years, we have built a reputation . Our talented team of professionals works tirelessly to provide solutions that not only meet but exceed our clients' expectations.</p>
+                <p class="justify-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla imperdiet, velit nec pulvinar mollis, ante urna pretium ipsum, feugiat mollis risus nisl id justo. Donec commodo, quam aliquet blandit volutpat, elit nisi bibendum enim, sed aliquet velit erat quis risus. Donec porta est ante, vel semper nisi consequat vitae. Vestibulum sed blandit diam, sed ultrices augue. Etiam nec mauris quis leo aliquam dictum eu eget nunc. Integer accumsan, odio sed egestas molestie, tortor nulla blandit augue, quis commodo ante orci a velit.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="headquarter" id="headquarter">
+        <h2>Our Headquarter</h2>
+        <div class="locations">
+            <div class="location">
+                <div class="circle">
+                    <img src="assets/monas.jpg" alt="Jakarta">
+                </div>
+                <p>Jakarta</p>
+            </div>
+            <div class="location">
+                <div class="circle">
+                    <img src="assets/bandung.jpg" alt="Bandung">
+                </div>
+                <p>Bandung</p>
+            </div>
+            <div class="location">
+                <div class="circle">
+                    <img src="assets/surabaya.jpg" alt="Surabaya">
+                </div>
+                <p>Surabaya</p>
+            </div>
+            <div class="location">
+                <div class="circle">
+                    <img src="assets/medan.jpg" alt="Medan">
+                </div>
+                <p>Medan</p>
+            </div>
+            <div class="location">
+                <div class="circle">
+                    <img src="assets/bali.jpg" alt="Bali">
+                </div>
+                <p>Bali</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="message-section" id="message">
+        <h2>Message Us</h2>
+        <div class="form-container">
+            <!-- Form Section -->
+            <div class="form">
+                <form id="messageForm">
+                    <label for="name">Nama :</label>
+                    <input type="text" id="name" name="name" placeholder="Nama" required>
+
+                    <label for="dob">Tanggal Lahir :</label>
+                    <input type="date" id="dob" name="dob" required>
+                    <label for="gender">Jenis Kelamin :</label>
+                    <div class="gender-selection">
+                        <input type="radio" id="male" name="gender" value="Laki-Laki" required>
+                        <label for="male">Laki-Laki</label>
+                        
+                        <input type="radio" id="female" name="gender" value="Perempuan" required>
+                        <label for="female">Perempuan</label>
+                    </div>
+                    <label for="message">Pesan :</label>
+                    <textarea id="message" name="message" placeholder="Pesan" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <!-- Display Section -->
+            <div class="display-box">
+                <p><strong>Current time:</strong> <span id="currentTime"></span></p>
+                <p><strong>Nama:</strong> <span id="displayName">-</span></p>
+                <p><strong>Tanggal Lahir:</strong> <span id="displayDob">-</span></p>
+                <p><strong>Jenis Kelamin:</strong> <span id="displayGender">-</span></p>
+                <p><strong>Pesan:</strong> <span id="displayMessage">-</span></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h3>RevoU Course</h3>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#aboutus">About Us</a></li>
+                    <li><a href="#headquarter">Our Headquarter</a></li>
+                    <li><a href="#message">Message Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-info">
+                <p>&copy; 2024 RevoU Course. All Rights Reserved.</p>
+                <p>Contact us: info@revou.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External JavaScript file -->
+    <script src="js/script.js"></script>
+</body>
+</html>
