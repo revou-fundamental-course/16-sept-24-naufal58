@@ -38,17 +38,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Handle form submission
     messageForm.addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent form submission and page reload
+        event.preventDefault();
 
-        // Capture the name input value
         let name = document.getElementById('name').value;
 
-        // Check if the name is empty, if so, set it to 'User'
         if (name.trim() === "") {
             name = "User";
         }
 
-        // Update the welcome message with the user's name or 'User'
         userNameElement.textContent = name;
     });
 });
