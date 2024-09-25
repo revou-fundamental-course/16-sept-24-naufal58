@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('displayDob').textContent = dob;
         document.getElementById('displayGender').textContent = gender;
         document.getElementById('displayMessage').textContent = message;
-        console.log(message)
     });
 });
 
