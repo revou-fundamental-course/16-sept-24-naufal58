@@ -21,13 +21,14 @@ document.addEventListener('DOMContentLoaded', function () {
         const name = document.getElementById('name').value;
         const dob = document.getElementById('dob').value;
         const gender = document.querySelector('input[name="gender"]:checked').value;
-        const message = document.getElementById('message').value;
+        const message = document.getElementById('pesan').value;
 
         // Display form data
         document.getElementById('displayName').textContent = name;
         document.getElementById('displayDob').textContent = dob;
         document.getElementById('displayGender').textContent = gender;
         document.getElementById('displayMessage').textContent = message;
+        console.log(message)
     });
 });
 
